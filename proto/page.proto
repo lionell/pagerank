@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package pr;
+
+message Page {
+  int32 id = 1;
+  repeated int32 in_links = 2;
+}

@@ -1,0 +1,4 @@
+data/
+bazel*
+out/
+release/
