@@ -103,7 +103,7 @@ It's super easy to distribute binaries via Docker. Here is an example how to run
 PageRank in Docker container:
 
 ```(shell)
-$ docker run --rm -it -v /path/to/data/on/host:/data lionell/parallel-pagerank bash
+$ docker run --rm -it -v /path/to/data/on/host:/data lionell/pagerank bash
 ```
 
 ## Output example
@@ -139,7 +139,7 @@ release and there is no support for protobufs. Use version based on
 ## Runtime dependencies
 
 * [OpenMP](http://www.openmp.org)
-* [OpenMPI](https://www.open-mpi.org) or [MPICH](https://www.mpich.org)
+* [OpenMPI](https://www.open-mpi.org)
 * [Protocol Buffers](https://developers.google.com/protocol-buffers) (serialization)
 * [gflags](https://gflags.github.io/gflags) (cli flags)
 * [glog](https://github.com/google/glog) (logging)
