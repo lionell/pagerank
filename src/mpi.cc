@@ -28,9 +28,9 @@ int main(int argc, char *argv[]) {
 	FLAGS_logtostderr = 1;
 	google::ParseCommandLineFlags(&argc, &argv, true /* remove_flags */);
 	google::InitGoogleLogging(argv[0]);
+	MPI_Init(nullptr, nullptr);
 	Timer timer;
 
-	MPI_Init(nullptr, nullptr);
 	int world_size;
 	MPI_Comm_size(MPI_COMM_WORLD, &world_size);
 	MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);

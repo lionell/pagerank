@@ -34,8 +34,9 @@ void ReadPagesFromChunk(int chunk_size, int chunk_id,
 		LOG(FATAL) << "Error parsing chunk from file " + filename + ".";
 
 	int shift = begin - chunk_begin;
+	int cnt = end - begin + 1;
 	std::move(chunk.mutable_pages()->begin() + shift,
-			chunk.mutable_pages()->end(),
+			chunk.mutable_pages()->begin() + shift + cnt,
 			std::back_inserter(pages));
 }
 
