@@ -80,8 +80,8 @@ built-in help(to call just add `-help`).
 Let's run `omp` binary on some dataset:
 
 ```(shell)
-$ omp
-    --dataset /path/to/dataset
+$ omp \
+    --dataset /path/to/dataset \
     --output /path/to/output
 ```
 
@@ -103,14 +103,14 @@ It's super easy to distribute binaries via Docker. Here is an example how to run
 PageRank in [Docker container](https://hub.docker.com/r/lionell/pagerank):
 
 ```(shell)
-$ docker run
-    --rm -it
-    -v /path/to/data/on/host:/data
+$ docker run \
+    --rm -it \
+    -v /path/to/data/on/host:/data \
     lionell/pagerank bash
 
-# mpirun --allow-run-as-root
-    -np 4 mpi
-    --dataset /data/1m_10k
+# mpirun --allow-run-as-root \
+    -np 4 mpi \
+    --dataset /data/1m_10k \
     --output /var/pagerank/mpi
 ```
 
