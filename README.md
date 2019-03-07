@@ -1,3 +1,5 @@
+# PageRank
+
 <div align="center">
   <img src="https://github.com/lionell/pagerank/blob/master/docs/img/googlepagerank.jpg" />
 </div>
@@ -7,7 +9,7 @@ different parallelization approaches. For now there are three of them available:
 Serial(no parallelization), OpenMP(shared memory), MPI(communication via network).
 We are going to benchmark them on different datasets.
 
-## PageRank
+## History
 
 PageRank is an algorithm used by Google Search to rank websites in their search engine results.
 PageRank was named after Larry Page, one of the founders of Google.
